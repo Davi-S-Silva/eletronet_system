@@ -1,0 +1,270 @@
+*, ul, li {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    background-color: aqua;
+}
+
+body {
+    /* background-color: blueviolet; */
+}
+
+.header_page {
+    background-color: #04a7e9;
+}
+
+
+.content_page {
+    height: auto;
+}
+
+@media screen and (min-width: 300px) {
+    body {
+        background-color: green;
+    }
+
+    .header_site {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .header_site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_mobile {
+        display: none;
+    }
+
+
+    .area_topo {
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .cabecalho_topo {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 3px 20px;
+    }
+
+    .cabecalho_topo figure {
+        /* background-color: #f00; */
+        margin: 0;
+    }
+
+    .cabecalho_topo ul {
+        display: flex;
+        margin: 0;
+        /* background-color: #04a7e9; */
+        height: fit-content;
+        /* margin-top: 40px; */
+    }
+
+    .cabecalho_topo ul li {
+        margin: 0 15px;
+        /* background-color: aquamarine */
+    }
+
+    .cabecalho_topo a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+
+    .area_topo nav {
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+
+
+    .area_topo nav ul, .area_topo nav ul div {
+        /* background-color: #fff; */
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .area_topo nav ul {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .area_topo nav ul li a {
+        padding: 5px 10px;
+        font-weight: bold;
+        /* text-transform: uppercase; */
+        /* color: blue; */
+    }
+
+    .area_topo nav ul li a.assinante {
+        color: #00b4f5;
+    }
+
+    .footer_site {
+        background-color: #030ba6;
+    }
+
+    .area_footer {
+        background-color: #030ba6;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-left: 10%;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    .area_footer ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .area_footer ul * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .area_footer ul li.menu_footer ul {
+        flex-direction: column;
+        padding: 30px 0;
+        /* background-color: #00b4f5; */
+    }
+
+    .area_footer ul li ul.contatos {
+        /* background-color: #52a603; */
+    }
+
+    .area_footer ul li ul.contatos li {
+        margin: 0 10px;
+        /* background-color: #00b4f5; */
+    }
+
+    #planos {
+        /* background-color: #030ba6; */
+        background-image: url('http://localhost:8000/images/bg_planos.jpg');
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        /* background-color: #131e52; */
+        /* background-position: 50%; */
+        /* background-size: auto; */
+        /*C:\xampp\htdocs\projetos\eletronet_app\public\images\bg_planos.jpg*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #planos figure {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    #planos figure img {
+        width: 100%;
+    }
+
+    .planos {
+        background-color: #ffcc00;
+        margin: 30px;
+        padding: 3px;
+        border-radius: 15px;
+        color: #030ba6;
+        height: auto;
+    }
+
+
+    .planos header {
+        /* background-color: #030ba6; */
+        text-align: center;
+        font-weight: bold;
+        font-size: 25pt;
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    .planos header p:first-child {
+        font-size: 50pt;
+        margin-top: 20px;
+    }
+
+    .planos article {
+        background-color: #fff;
+        color: #373435;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .planos article p {
+        margin: 20px;
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    .planos article ul {
+        margin-bottom: 25px;
+    }
+
+    .planos a {
+        background-color: #ffcc00;
+        width: fit-content;
+        z-index: 100;
+        bottom: 0;
+        position: absolute;
+        margin-bottom: -20px;
+        border-radius: 50px;
+        min-width: 100px;
+        padding: 5px 10px;
+        font-weight: bold;
+        color: #030ba6;
+    }
+
+    .area_footer {
+        color: #fff;
+    }
+
+    .rodape_footer {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+}
